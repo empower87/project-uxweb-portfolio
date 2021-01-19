@@ -50,6 +50,10 @@ nav {
     background: black;
     align-items: center;
     padding: 0px 10px 0px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }
 nav img {
     width: 30%
