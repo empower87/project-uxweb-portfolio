@@ -1,8 +1,7 @@
 @media screen and (max-width: 400px) {
     body {
-        font-size: 16px;
+        font-size: 12px;
         max-width: 400px;
-
     }
   }
 
@@ -14,7 +13,12 @@ body {
 }
 .hero > img {
     width: 100%;
-    height: 300px;
+    margin: 0;
+    padding: 0;
+
+}
+main {
+    margin-top: -5px;
 }
 .hero {
     position: relative;
@@ -32,12 +36,13 @@ nav {
     justify-content: space-between;
     background: black;
     align-items: center;
-    padding: 0px 10px 0px 10px;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
+    width: 100%;
 }
+
 nav img {
     width: 30%
 }
@@ -67,27 +72,76 @@ footer p {
     margin-left: 10px;
     margin-right: 10px;
 }
-section {
-    padding: 25px;
-}
 
-main img {
-    width: 40%;
-}
 .other-products img {
-    width: 50%;
+    width: 40%;
 }
 .project-clicks {
     display: flex;
 }
-.title-overview, .hi-fi, .quote {
-    background:rgba(54, 31, 31, 0.986);
-    color: white;
+.brown {
+    background: rgb(48, 28, 28);
+    color: white
 }
-.goals, .mvp, .onboarding {
-    background: rgba(128, 107, 91, 0.986);
-    color: white;
+.light {
+    background:rgb(110, 81, 81);
+    color: white
 }
 .gray {
-    background:rgba(206, 203, 201, 0.986)
+    background:rgb(211, 208, 208)
+}
+.pad {
+    padding: 25px;
+}
+#user-research {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 12px;
+}
+#user-research div {
+    width: 40%;
+    padding: 10px;  
+}
+h3, h1 {
+    margin-bottom: 15px;
+    font-variant-caps: all-petite-caps
+}
+.overview-text {
+    display: flex;
+    justify-content: space-between;
+
+}
+.overview-text div {
+    width: 40%;
+}
+#user-flow {
+    display: flex;
+    flex-direction: row;
+}
+#flow-img img {
+    width: 90%;
+}
+#user-flow div{
+    width: 40%;
+}
+.concept-pic img {
+    width: 90%;
+}
+.concept-pic h3, p, img {
+    margin-bottom: 20px;
+}
+.onb img {
+    width: 95%;
+    margin-top: 10px;
+}
+.hi-fi {
+    display: flex;
+
+}
+.hi-fi div {
+    width: 40%;
+}
+.hi-fi img {
+    width: 80%;
 }
