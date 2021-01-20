@@ -2,9 +2,10 @@
     body {
         font-size: 16px;
         max-width: 400px;
-        display: block
+
     }
   }
+
 * {
     margin: 0px;
 }
@@ -26,24 +27,6 @@ body {
     transform: translate(-50%, -50%);
     color:white;
 }
-.portfolio-images {
-    padding: 35px;
-}
-.portfolio-images section {
-    position: relative;
-    text-align: center;
-    margin-bottom: 20px;
-
-}
-.portfolio-images h2 {
-   position: absolute;
-   bottom: 8px;
-   left: 16px; 
-   color: rgb(235, 249, 250);
-}
-.portfolio-images img {
-    width: 100%
-}
 nav {
     display: flex;
     justify-content: space-between;
@@ -58,7 +41,6 @@ nav {
 nav img {
     width: 30%
 }
-
 nav a {
     text-decoration: none;
     color: white;
@@ -84,4 +66,28 @@ footer p {
     color: white;
     margin-left: 10px;
     margin-right: 10px;
+}
+section {
+    padding: 25px;
+}
+
+main img {
+    width: 40%;
+}
+.other-products img {
+    width: 50%;
+}
+.project-clicks {
+    display: flex;
+}
+.title-overview, .hi-fi, .quote {
+    background:rgba(54, 31, 31, 0.986);
+    color: white;
+}
+.goals, .mvp, .onboarding {
+    background: rgba(128, 107, 91, 0.986);
+    color: white;
+}
+.gray {
+    background:rgba(206, 203, 201, 0.986)
 }
