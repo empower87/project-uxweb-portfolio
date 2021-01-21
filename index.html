@@ -4,45 +4,70 @@
     <link rel="stylesheet" href="/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Front</title>
 </head>
 <body>
     <header>
         <nav>
             <img src='images/logo-11.svg' alt="logo" />
-            <div class="about-contact">
-                <a href="/aboutme">About</a>
-                <a href="/contact">Contact</a>
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    <a href="case-study.html>"><li>Case Studies</li></a>
+                    <a href="#"><li>Contact</li></a>
+                </ul>
             </div>
         </nav>
         <div class="hero">       
             <img src='images/japan.jpg' alt="japan" />
-            <h1>Name Namer</h1>
+            <h2>Refining Riley</h2>
+            <p>Project Designer - lifelong learner</p>
         </div>            
     </header>
     <div class="portfolio-images">
         <section>
             <img src='images/tools.jpg' alt="tools" />
-            <h2>Project 1</h2>
+            <h3>Project 1</h3>
         </section>
         <section>
             <img src='images/bacon.jpg' alt="bacon" />
-            <h2>Project 2</h2>
+            <h3>Project 2</h3>
         </section>
         <section>
             <img src="images/snow.jpg" alt="snow" />
-            <h2>Project 3</h2>
+            <h3>Project 3</h3>
         </section>
     </div>
     <footer>
         <h2>Let's Connect!</h2>
-        <p>This is some nonsensical filler text that I'm putting in for no many reasons but not sure why.</p>
+        <p>Feel free to reach out and say "hey!"</p>
         <div class="links">
-            <a href="srs">Email</a>
-            <a href="srs">LinkedIn</a>
-            <a href="srs">Medium</a>
-            <a href="srs">Resume</a>
+            <div>
+                <h5>Email:</h5>
+                <a href="srs">connect@gmail.com</a>
+            </div>
+            <div>
+                <h5>LinkedIn:</h5>
+                <a href="srs">LinkedIn link here</a>
+            </div>
+            <div>
+                <h5>Medium:</h5>
+                <a href="srs">Medium blog here</a>
+            </div>
+            <div>
+                <h5>Resume:</h5>
+                <a href="srs">Resume download</a>
+            </div>
         </div>
+        <span>
+            @2021 - Alvaro Gil
+        </span>
     </footer>
 </body>
 </html>

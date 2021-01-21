@@ -1,68 +1,68 @@
-@media screen and (max-width: 400px) {
-    body {
-        font-size: 16px;
-        max-width: 400px;
-        display: block
-    }
-  }
+/* ---page--- */
 * {
     margin: 0px;
 }
 body {
+    font-size: 16px;
+    max-width: 100vw;
     font-family: 'Gilroy', 'Open Sans', Helvetica, sans-serif;
 }
-.hero > img {
-    width: 100%;
-    height: 300px;
-}
-.hero {
-    position: relative;
-    text-align: center;
-}
-.hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color:white;
-}
-.portfolio-images {
-    padding: 35px;
-}
-.portfolio-images section {
-    position: relative;
-    text-align: center;
-    margin-bottom: 20px;
 
-}
-.portfolio-images h2 {
-   position: absolute;
-   bottom: 8px;
-   left: 16px; 
-   color: rgb(235, 249, 250);
-}
-.portfolio-images img {
-    width: 100%
-}
+/* ---nav bar--- */
 nav {
     display: flex;
     justify-content: space-between;
     background: black;
     align-items: center;
-    padding: 0px 10px 0px 10px;
     position: fixed;
     top: 0;
     left: 0;
+    width: 100vw;
+    height: 10vh;
     z-index: 9999;
+
 }
 nav img {
-    width: 30%
+    width: 17vh;
+    margin-left: 3vh;
 }
-
 nav a {
     text-decoration: none;
     color: white;
 }
+.about-contact {
+    margin-right: 3vh;
+}
+.hammy {
+    margin-right: 3vh;
+}
+/* ---header image--- */
+.hero > img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.hero {
+    position: relative;
+    text-align: center;
+    width: 100vw;
+    height: 50vh;
+}
+.hero h2 {
+    position: absolute;
+    color:white;
+    bottom: 10%;
+    left: 4%;
+}
+.hero p {
+    position: absolute;
+    color: white;
+    bottom: 4%;
+    left: 4%;
+}
+
+/* ---footer--- */
 footer {
     background: black;
     color: white;
@@ -70,18 +70,233 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 180px;
-    padding: 20px;
+    font-size: 12px;
+    padding: 3vh;
+    height: 35vh;
 }
 footer p {
     text-align: center;
-    font-size: 12px;
-    margin-bottom: 40px;
     width: 70%;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+}
+.links div {
+    text-decoration: none;
+    color: white;
+    height: 50%;
+    width: 50%;
+    text-align: center;
+}
+.links {
+    justify-content: center;
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid gray;
+    margin-bottom: 2vh;
 }
 .links a {
     text-decoration: none;
     color: white;
-    margin-left: 10px;
-    margin-right: 10px;
+}
+span {
+    font-size: 10px;
+    color: gray;
+}
+
+/* ---main section--- */
+.portfolio-images {
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-images section {
+    position: relative;
+    width: 70vw;
+    margin-bottom: 2vh;
+}
+.portfolio-images h3 {
+   position: absolute;
+   bottom: 4%;
+   left: 4%;
+   color: rgb(235, 249, 250);
+}
+.portfolio-images img {
+    width: 100%;
+}
+
+
+/* ---desktop--- */
+@media screen and (min-width: 1080px) {
+    body {
+        font-size: 16px;
+    }
+    .portfolio-images {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio-images {
+        margin-top: 12vh;
+   
+    }
+    .portfolio-images img {
+        width: 70vw;
+        height: 40vh;
+        padding-bottom: 5vh;
+    }
+    .portfolio-images img {
+        position: relative;
+    }
+    .portfolio-images h3 {
+        position: absolute;
+        bottom: 8vh;
+        color: rgb(235, 249, 250);
+        width: 70vw;
+
+     }
+}
+
+#menuToggle
+{
+
+  position: relative;
+  top: 0;
+  right: 6%;
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 100vw;
+  margin: 1vh 0 0 -100vw;
+  padding: 10vh;
+  padding-top: 5vh;
+
+  background: #000000;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+  color: white;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
 }

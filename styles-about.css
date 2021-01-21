@@ -1,23 +1,104 @@
-@media screen and (max-width: 400px) {
-    body {
-        font-size: 16px;
-        max-width: 400px;
-        display: block
-    }
-  }
-
+/* ---page--- */
+body {
+    font-size: 16px;
+    max-width: 100vw;
+    font-family: 'Gilroy', 'Open Sans', Helvetica, sans-serif;
+}
 * {
     margin: 0px;
 }
-body {
-    font-family: 'Gilroy', 'Open Sans', Helvetica, sans-serif;
+
+/* ---nav bar--- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    z-index: 9999;
 }
+nav img {
+    width: 17vh;
+    margin-left: 3vh;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+.about-contact {
+    margin-right: 3vh;
+}
+
+/* ---header image--- */
 .hero > img {
     width: 100%;
-    height: 300px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+}
+.hero h1 {
+    position: absolute;
+    color:white;
+    font-size: 7vh;
+    bottom: 30%;
+    left: 5%;
+}
+
+/* ---footer--- */
+footer {
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+    padding: 3vh;
+    height: 35vh;
+}
+footer p {
+    text-align: center;
+    width: 70%;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+}
+.links div {
+    text-decoration: none;
+    color: white;
+    height: 50%;
+    width: 50%;
+    text-align: center;
+}
+.links {
+    justify-content: center;
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid gray;
+    margin-bottom: 2vh;
+}
+.links a {
+    text-decoration: none;
+    color: white;
+}
+span {
+    font-size: 10px;
+    color: gray;
+}
+
+/* ---main section--- */
 .about-me-main {
-    padding: 40px 20px 20px 20px;
+    padding: 8vh 4vh 4vh 4vh;
 }
 .brand {
     padding: 20px;
@@ -33,76 +114,30 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 8vh;
 }
 .hello-text p {
-    margin-bottom: 20px;
+    margin-bottom: 3vh;
 }
 .hello-text h1 {
-    margin-bottom: 20px;
-}
-.hero {
-    position: relative;
-    text-align: center;
-}
-.hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color:white;
-}
-nav {
-    display: flex;
-    justify-content: space-between;
-    background: black;
-    align-items: center;
-    padding: 0px 10px 0px 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-}
-nav img {
-    width: 30%
-}
-nav a {
-    text-decoration: none;
-    color: white;
-}
-footer {
-    background: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 180px;
-    padding: 20px;
-}
-footer p {
-    text-align: center;
-    font-size: 12px;
-    margin-bottom: 40px;
-    width: 70%;
-}
-.links a {
-    text-decoration: none;
-    color: white;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-bottom: 4vh;
 }
 .img-break img {
     width: 100%;
 }
 .bottom-pics {
+    height: 35vh;
     display: flex;
 }
 .bottom-pics img {
-    width: 50%;
+    width: 100%;
+    height: 100%;
 }
 .press {
-    margin-top: 40px;
+    margin-top: 8vh;
+}
+.press h2 {
+    text-align: center;
 }
 .bullet-points div {
     display: flex;
@@ -117,4 +152,187 @@ footer p {
 }
 .bullet-points p {
     padding-left: 20px;
+}
+
+/* ---desktop--- */
+@media screen and (min-width: 1080px) {
+    body {
+        font-size: 16px;
+    }
+    .about-me-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-me-main div {
+        width: 60vw;
+    }
+    nav {
+        height: 6vh;
+    }
+    .hello-text {
+        display: flex;
+        flex-direction: row;
+    }
+    .hello-text h1 {
+        font-size: 14vh;
+        width: 30%;
+    }
+    .hello-text div {
+        padding: 5vh;
+    }
+    .bottom-pics {
+        height: 50vh;
+    }
+    footer {
+        height: 50vh;
+        font-size: 16px;
+    }
+    .hero h1 {
+        font-size: 12vh;
+        left: 22%;
+        width: 20%;
+        bottom: 20%;
+    }
+}
+
+
+#menuToggle
+{
+
+  position: relative;
+  top: 0;
+  right: 6%;
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 100vw;
+  margin: 1vh 0 0 -100vw;
+  padding: 10vh;
+  padding-top: 5vh;
+
+  background: #000000;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+  color: white;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
 }
