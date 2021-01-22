@@ -1,7 +1,7 @@
 /* ---page--- */
 
 body {
-    font-size: 12px;
+    font-size: 14px;
     max-width: 100vw;
     font-family: 'Libre Baskerville', serif;
 }
@@ -143,7 +143,7 @@ nav a {
 .hero {
     position: relative;
     width: 100vw;
-    height: 50vh;
+    height: 65vh;
 }
 .hero h1 {
     position: absolute;
@@ -156,7 +156,6 @@ nav a {
 /* ---footer--- */
 footer {
     background: black;
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -166,7 +165,9 @@ footer {
     height: 30vh;
     font-size: 13px;
     border-top: 1px solid black;
-    border-radius: 12px;
+    border-radius: 12px 12px 0px 0px;
+    color: #E3DBD5;
+    
 }
 footer h2 {
     letter-spacing: 2px;
@@ -190,7 +191,7 @@ footer p {
 }
 .links div {
     text-decoration: none;
-    color: white;
+
     height: 30%;
     width: 50%;
     text-align: center;
@@ -201,95 +202,160 @@ footer p {
     height: 15vh;
     display: flex;
     flex-wrap: wrap;
-
 }
 .links a {
     text-decoration: none;
-    color: white;
+
+    color: #E3DBD5;
 }
 span {
     font-size: 10px;
 }
 
 /* ---main section--- */
-.other-products img {
-    width: 40%;
-}
-.project-clicks {
-    display: flex;
-}
-
-.brown {
-    background: rgb(48, 28, 28);
+.black {
+    background: rgb(0, 0, 0);
     color: white
 }
-.light {
-    background:rgb(110, 81, 81);
+.green {
+    background:rgba(136, 141, 44, 0.78);
     color: white
 }
 .gray {
     background:rgb(211, 208, 208)
 }
+.oatmeal {
+    background: #E3DBD5; 
+}
 .pad {
-    padding: 10vw;
+    padding: 8vw;
 }
-/* business goals section */
-.goals li {
-    list-style-type: none;
-    padding: 1vw;
+h3 {
+    margin-bottom: 2vh;
 }
-.goals ul {
-    padding-inline-start: 0;
-}
-
-/* user research section */
-#user-research div {
+/* ---wire-framing depop--- */
+.lead-text h1 {
+    font-size: 35px;
+    text-align: center;
+    font-weight: normal;
     margin-bottom: 4vh;
 }
+.lead-text p {
+    text-align: center;
+}
+
+/* ---user research section--- */
 #usability-test {
     margin-bottom: 4vh;
 }
-h3, h1 {
-    margin-bottom: 3vh;
-    font-variant-caps: all-petite-caps
-}
-.overview-text {
+/* ---low-fi wireframes--- */
+.concept-pic {
+    padding: 7vw 5vw 5vw 7vw;
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
 }
-.overview-text div {
-    width: 40%;
-    margin-top: 3vh;
+.concept-pic div {
+    width: 45%;
 }
-
 .concept-pic img {
     width: 90%;
     margin-top: 3vh;
 }
-
-.onb img {
-    width: 95%;
-    margin-top: 10px;
+.concept-pic h3 {
+    width: 110%;
 }
+.concept-pic p {
+    width: 80%;
+    letter-spacing: 2px;
+}
+
+/* ---mid-fi wireframes--- */
+#mid-fi-text {
+    height: 10vh;
+}
+.mid-fi img {
+    width: 100%;
+    height: 100%;
+}
+.mid-fi div {
+    height: 15vh;
+}
+
+/* ---hi-fi wireframes--- */
 .hi-fi {
     display: flex;
+}
+.hi-fi h3 {
+    width: 120%;
 }
 .hi-fi div {
     width: 45%;
 }
+.hi-fi p {
+    letter-spacing: 2px;
+}
 #hand {
-    height: 40%;
-    align-self: flex-end;
+    margin-left: 5vw;
 }
 #hand img {
-    width: 50%;
-    position: absolute;
-    bottom: 0px;
+    width: 100%;
 }
-#brown-sect {
-    position: relative;
+
+/* ---screenshots--- */
+.screens {
+    padding: 2vh;
 }
+.screens h3 {
+    width: 100%;
+}
+.screens-d div {
+    height: 22vh;
+    margin-bottom: 3vh;
+}
+.screens img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ---more work--- */
+.project-clicks {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 25vh;
+    margin-bottom: -2vw;
+}
+.project-clicks div {
+    width: 40vw;
+    height: 15vh;
+}
+.project-clicks img {
+    width: 100%;
+    height: 100%;
+}
+.work {
+    padding-top: 5vh;
+}
+.work h2 {
+    margin-bottom: 4vh;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+#black-border {
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px #00000075;
+    border-radius: 6px;
+    background: black
+}
+#white-border {
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px #00000075;
+    border-radius: 6px;
+    background: white;
+}
+
 @media screen and (min-width: 1080px) {
     body {
         font-size: 16px;
