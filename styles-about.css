@@ -253,19 +253,11 @@ span {
     width: 97%;
     height: 97%;
 }
-.bottom-pics {
-    height: 35vh;
-    display: flex;
-}
-.bottom-pics img {
-    width: 100%;
-    height: 100%;
-}
+
+/* ---press quotes--- */
 .presser {
     padding: 2vh;
     background: #E3DBD5;
-}
-.press {
 }
 .press h2 {
     text-align: center;
@@ -297,6 +289,48 @@ span {
     border-bottom: 2px solid #888D2C;
     width: 50%;
     height: 2px;
+}
+
+/* ---bottom pics--- */
+.bottom-pics {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -10px;
+}
+#one img {
+    width: 80%;
+}
+#two img {
+    width: 100%;
+}
+#three img {
+    width: 70%;
+}
+#one {
+    width: 22vw;
+    height: 100%;
+    background: rgb(255, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#two {
+    width: 29vw;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#three {
+    width: 49vw;
+    height: 100%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ---desktop--- */

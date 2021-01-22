@@ -4,6 +4,7 @@ body {
     font-size: 14px;
     max-width: 100vw;
     font-family: 'Libre Baskerville', serif;
+
 }
 * {
     margin: 0px;
@@ -152,6 +153,21 @@ nav a {
     bottom: 30%;
     left: 5%;
 }
+#depop-link {
+    height: 5vh;
+    width: 40vw;
+    position: absolute;
+    bottom: 19%;
+    left: 30%;
+}
+#depop-link button {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
 
 /* ---footer--- */
 footer {
@@ -242,7 +258,12 @@ h3 {
 .lead-text p {
     text-align: center;
 }
-
+#quote {
+    text-align: center;
+}    
+#quote p {
+    padding: 5px;
+}
 /* ---user research section--- */
 #usability-test {
     margin-bottom: 4vh;
@@ -265,7 +286,7 @@ h3 {
 }
 .concept-pic p {
     width: 80%;
-    letter-spacing: 2px;
+
 }
 
 /* ---mid-fi wireframes--- */
@@ -291,7 +312,7 @@ h3 {
     width: 45%;
 }
 .hi-fi p {
-    letter-spacing: 2px;
+ 
 }
 #hand {
     margin-left: 5vw;

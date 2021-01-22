@@ -146,13 +146,14 @@ nav a {
     position: relative;
     text-align: center;
     width: 100vw;
-    height: 50vh;
+    height: 70vh;
 }
 .hero h2 {
     position: absolute;
     color:white;
     bottom: 10%;
     left: 4%;
+    letter-spacing: 2px;
 }
 .hero p {
     position: absolute;

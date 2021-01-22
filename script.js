@@ -1,3 +1,3 @@
-function myFunction(x) {
-    x.classList.toggle("change");
-  }
+document.getElementById("depop-button").onclick = function () {
+  location.href = "www.depop.com";
+};
