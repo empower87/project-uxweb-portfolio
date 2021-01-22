@@ -97,7 +97,7 @@ nav a {
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: #ffffff;
 }
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
@@ -191,7 +191,6 @@ footer p {
 }
 .links div {
     text-decoration: none;
-
     height: 30%;
     width: 50%;
     text-align: center;
