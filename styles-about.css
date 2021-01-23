@@ -141,6 +141,7 @@ nav a {
     width: 100vw;
     height: 50vh;
     background: rgb(0, 0, 0);
+    
 }
 .hero h1 {
     position: absolute;
@@ -206,6 +207,7 @@ footer p {
 }
 span {
     font-size: 10px;
+    color: gray;
 }
 
 /* ---main section--- */
@@ -227,6 +229,9 @@ span {
     font-weight: normal;
     letter-spacing: 4px;
     line-height: 1.5;
+}
+.brand p {
+    width: 100%;
 }
 .hello-text {
     display: flex;
@@ -282,12 +287,15 @@ span {
     justify-content: center;
     height: 8vh;
 }
-.presser {
-    display: flex;
-    justify-content: center;
-}
+
 .press {
-    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+.press > div {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 .slider {
     width: 60vw;
@@ -295,21 +303,51 @@ span {
     display: flex;
     overflow-x: auto;
     border: 2px solid #E3DBD5;
-    scroll-snap-type: x mandatory; 
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
   }
 .slide {
     width: 100%;
     height: 100%;
     flex-shrink: 0;
+    margin-right: 30px;
     background: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-.slide > div {
     scroll-snap-align: start;
+    -webkit-overflow-scrolling: touch
 }
+.slide-wrap > a {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+  }
+  .slide-wrap > a.page{
+      color: #888D2C;
+  }
+  .slider > a:active {
+    top: 1px;
+  }
+  .slider > a:focus {
+    background: #000;
+  }
+  .slider > a:visited {
+    color: inherit;
+  }
+
+
+
+
 .slide img {
     width: 90%;
 }
@@ -394,14 +432,43 @@ span {
     .bottom-pics {
         height: 50vh;
     }
-    footer {
-        height: 50vh;
-        font-size: 16px;
-    }
     .hero h1 {
         font-size: 12vh;
         left: 22%;
         width: 20%;
         bottom: 20%;
     }
+    /* ---footer--- */
+    footer h2 {
+        letter-spacing: 4px;
+        font-size: 30px;
+        font-weight: normal;
+    }
+    footer p {
+        font-size: 20px;
+        padding-bottom: 3vh;
+        letter-spacing: 3px;
+    }
+    #border {
+        width: 20%;
+        border-top: 4px solid #888D2C;
+    }
+    .links div {
+        height: 100%;
+        width: 25%;
+    }
+    .links {
+        width: 80vw;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+    }
+    .links a {
+        text-decoration: none;
+        color: #E3DBD5;
+    }
+    span {
+        font-size: 12px;
+    }
+    
 }

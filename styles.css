@@ -146,7 +146,7 @@ nav a {
     text-align: center;
     width: 100vw;
     height: 95vh;
-    background: black
+    background: black;
 }
 .hero h2 {
     position: absolute;
@@ -211,14 +211,14 @@ footer p {
     height: 15vh;
     display: flex;
     flex-wrap: wrap;
-
 }
 .links a {
     text-decoration: none;
     color: #E3DBD5;
 }
-span {
+footer span {
     font-size: 10px;
+    color: gray;
 }
 
 /* ---main section--- */
@@ -233,7 +233,6 @@ span {
 }
 .portfolio-images section {
     width: 70vw;
-
 }
 
 .portfolio-images img {
@@ -246,14 +245,43 @@ span {
     body {
         font-size: 16px;
     }
+    nav {
+        height: 6vh;
+        background: rgba(0, 0, 0, 0.692);
+    }
+    .desktop-links {
+        width: 20vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .desktop-links a {
+        letter-spacing: 2px;
+    }
+    #menuToggle {
+        display: none;
+    }
+    /* ---header--- */
     .hero img {
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        margin: 0;
-        object-fit: contain;
-        object-position: right center;
-        background: black;
+        object-fit: cover;
+    }
+    .hero {
+        height: 65vh;
+    }
+    .hero h2 {
+        bottom: 24%;
+        left: 10%;
+        letter-spacing: 2px;
+        font-size: 37px;
+    }
+    .hero span {
+        font-size: 18px;
+        font-weight: normal;
+        letter-spacing: 2px;
+    }
+    .hero p {
+        bottom: 17%;
+        left: 10%;
+        letter-spacing: 2px;
     }
     #desktop {
         display: block;
@@ -261,13 +289,39 @@ span {
     #mobile {
         display: none;
     }
-    .hero > img {
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        margin: 0;
-
+    /* ---footer--- */
+    footer h2 {
+        letter-spacing: 4px;
+        font-size: 30px;
+        font-weight: normal;
     }
+    footer p {
+        font-size: 20px;
+        padding-bottom: 3vh;
+        letter-spacing: 3px;
+    }
+    #border {
+        width: 20%;
+        border-top: 4px solid #888D2C;
+    }
+    .links div {
+        height: 100%;
+        width: 25%;
+    }
+    .links {
+        width: 80vw;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+    }
+    .links a {
+        text-decoration: none;
+        color: #E3DBD5;
+    }
+    footer span {
+        font-size: 12px;
+    }
+    /* ---portfolio images--- */
     .portfolio-images {
         padding: 5vh;
         display: flex;
@@ -276,9 +330,15 @@ span {
         align-items: center;
     }
     .portfolio-images section {
-        width: 50vw;
-        margin-top: 8vh;
-   
+        width: 80vw;
+        height: 70vh;
+        margin-bottom: 10vh;
+    }
+    .portfolio-images img {
+        height: 100%;
+    }
+    #project-three {
+        height: 60vh;
     }
 
 

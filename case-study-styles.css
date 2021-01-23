@@ -225,6 +225,7 @@ footer p {
 }
 span {
     font-size: 10px;
+    color: gray;
 }
 
 /* ---main section--- */
@@ -389,5 +390,38 @@ h3 {
     main section {
         width: 70vw;
     }
+    /* ---footer--- */
+    footer h2 {
+        letter-spacing: 4px;
+        font-size: 30px;
+        font-weight: normal;
+    }
+    footer p {
+        font-size: 20px;
+        padding-bottom: 3vh;
+        letter-spacing: 3px;
+    }
+    #border {
+        width: 20%;
+        border-top: 4px solid #888D2C;
+    }
+    .links div {
+        height: 100%;
+        width: 25%;
+    }
+    .links {
+        width: 80vw;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+    }
+    .links a {
+        text-decoration: none;
+        color: #E3DBD5;
+    }
+    span {
+        font-size: 12px;
+    }
+    
  
 }
