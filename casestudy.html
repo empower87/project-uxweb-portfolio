@@ -11,7 +11,13 @@
 <body>
     <header>
         <nav>
-            <img src='images/logo.png' alt="logo" />
+            <img src='images/fifth-try-logo.png' alt="logo" />
+            <div class="desktop-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="casestudy.html">Case Study</a>
+                <a href="#">Contact</a>
+            </div>
             <div id="menuToggle">
                 <input type="checkbox" />
                 <span></span>
@@ -26,7 +32,8 @@
             </div>
         </nav>
         <div class="hero">       
-            <img src='images/case-study-hero-mobile.jpeg' alt="Depop case study" />
+            <img src='images/case-study-hero-mobile.jpeg' id="mobile" alt="Depop case study" />
+            <img src='images/case-study-hero-desktop.jpeg' id="desktop" alt="Depop case study" />
             <div id="depop-link">
                 <button onClick="window.location='https://www.depop.com';" >
                 </button>
@@ -36,11 +43,11 @@
     <main>
         <section class="black">
             <div class="pad">
-                <div class="lead-text">
+                <div class="lead-text" id="boxes"> 
                     <div>
                         <h1>Wire-Framing Depop</h1>
                     </div>
-                    <div id="overview"> 
+                    <div id="block-text"> 
                         <p>
                             This is taken from Katalina’s medium article about the UX/UI 
                             Prework at Ironhack which was to choose a mobile application 
@@ -53,57 +60,73 @@
         </section>
         <section class="green">
             <div class="pad">
-                <div class="goals">
-                    <h3>About</h3>
-                    <p>
-                        In my personal life, I find myself most using second hand 
-                        selling apps because it aligns with my values to shop and 
-                        sell sustainably. Therefore, I decided to choose Depop, “a 
-                        global marketplace — a mobile space where you can see what 
-                        your friends and the people you’re inspired by are liking, 
-                        buying, and selling”. A beautiful and simplistic idea, to 
-                        which I was soon suprised to discover the intricacies that 
-                        go into creating it.
-                    </p>
+                <div class="goals" id="boxes">
+                    <div>
+                        <h3>About</h3>
+                    </div>
+                    <div id="block-text">
+                        <p>
+                            In my personal life, I find myself most using second hand 
+                            selling apps because it aligns with my values to shop and 
+                            sell sustainably. Therefore, I decided to choose Depop, “a 
+                            global marketplace — a mobile space where you can see what 
+                            your friends and the people you’re inspired by are liking, 
+                            buying, and selling”. A beautiful and simplistic idea, to 
+                            which I was soon suprised to discover the intricacies that 
+                            go into creating it.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="white">
-            <div class="pad" id="user-research">
-                <div>
-                    <h3>Considerations</h3>
-                    <p>
-                        In thinking about my wireframe, I had to decide what the user 
-                        task I would have liked to achieve. I wondered what someone who 
-                        has never used the app before would do. Therefore, I decided upon 
-                        making my idea of how someone would explore this new application.
-                    </p>
+            <div class="pad">
+                <div id="boxes">
+                    <div>
+                        <h3>Considerations</h3>
+                    </div>
+                    <div id="block-text">
+                        <p>
+                            In thinking about my wireframe, I had to decide what the user 
+                            task I would have liked to achieve. I wondered what someone who 
+                            has never used the app before would do. Therefore, I decided upon 
+                            making my idea of how someone would explore this new application.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="oatmeal">
             <div class="pad">
-                <div>
-                    <h3>People's Goals</h3>
-                    <p>
-                        In my mind, this user interaction would go from the (1) Explore Page, 
-                        (2)My DNA page, (3)Feed and from any of those pages they can navigate 
-                        to (4) Listing page or to(6)Profile Page/User Page.
-                    </p>
+                <div id="boxes">
+                    <div>
+                        <h3>People's Goals</h3>
+                    </div>
+                    <div id="block-text">
+                        <p>
+                            In my mind, this user interaction would go from the (1) Explore Page, 
+                            (2)My DNA page, (3)Feed and from any of those pages they can navigate 
+                            to (4) Listing page or to(6)Profile Page/User Page.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="white">
             <div class="pad">
-                <div>
-                    <h3>Insight</h3>
-                    <p>
-                        In the visual below, you can follow this process starting from the 
-                        left which is a scan of my drawn out (lofi) wireframe. Moving on to 
-                        the right, where my screenshots and wireframe duplicates lie. Once I 
-                        had this complete, I moved onto making this wireframe to an 
-                        interactive prototype.
-                    </p>
+                <div id="boxes">
+                    <div>
+                        <h3>Insight</h3>
+                    </div>
+                    <div id="block-text">
+                        <p>
+                            In the visual below, you can follow this process starting from the 
+                            left which is a scan of my drawn out (lofi) wireframe. Moving on to 
+                            the right, where my screenshots and wireframe duplicates lie. Once I 
+                            had this complete, I moved onto making this wireframe to an 
+                            interactive prototype.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -118,60 +141,72 @@
         </section>
         <section class="white">
             <div class="pad">
-                <div class="mvp">
-                    <h3>Minimum Viable Product</h3>
-                    <p>
-                        Since I was just copying the screens for practice, looking back 
-                        now I would say the MVP is an application that shows listings, 
-                        user pages, and main pages.
-                    </p>
+                <div class="mvp" id="boxes">
+                    <div>
+                        <h3>Minimum Viable Product</h3>
+                    </div>
+                    <div id="block-text">
+                        <p>
+                            Since I was just copying the screens for practice, looking back 
+                            now I would say the MVP is an application that shows listings, 
+                            user pages, and main pages.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="oatmeal">
-            <div class="pad" id="user-flow">
-                <div>
-                    <h3>User Flow</h3>
-                    <p>
-                        In the visuals below, you can follow this process starting from 
-                        the left which is a scan of my drawn out (lofi) wireframe. 
-                        Moving on to the right, where my screenshots and wireframe 
-                        duplicates lie. Once I had this complete, I moved onto making 
-                        this wireframe to an interactive prototype.
-                    </p>
+            <div class="pad">
+                <div id="boxes">
+                    <div>
+                        <h3>User Flow</h3>
+                    </div>
+                    <div id="block-text">
+                        <p>
+                            In the visuals below, you can follow this process starting from 
+                            the left which is a scan of my drawn out (lofi) wireframe. 
+                            Moving on to the right, where my screenshots and wireframe 
+                            duplicates lie. Once I had this complete, I moved onto making 
+                            this wireframe to an interactive prototype.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="white">
-            <div class="concept-pic">
-                <div>
-                    <h3>low-fi Wireframes</h3>
-                    <p>
-                        In the visual to the right, you can follow this 
-                        process starting from the left which is a scan of my drawn out 
-                        (lofi) wireframe. 
-                    </p>
-                </div>
-                <div>
-                    <img src="images/lowfi.png">
+            <div class="pad">
+                <div class="concept-pic">
+                    <div>
+                        <h3>low-fi Wireframes</h3>
+                        <p>
+                            In the visual to the right, you can follow this 
+                            process starting from the left which is a scan of my drawn out 
+                            (lofi) wireframe. 
+                        </p>
+                    </div>
+                    <div>
+                        <img src="images/lowfi.png">
+                    </div>
                 </div>
             </div>
         </section>
         <section class="green">
             <div class="pad">
-                <div id="usability-test">
-                    <h3>Usability Testing</h3>
-                    <p>
-                        In bad practice of UX principles, I was the user, and I found it 
-                        kinda difficult since there aren’t labels.
-                    </p>
-                </div>
-                <div>
-                    <h3>Additional Issues To Address</h3>
-                    <p>
-                        I address the issues in the original medium article where I wrote 
-                        this case study!
-                    </p>
+                <div id="boxes">
+                    <div id="usability-test">
+                        <h3>Usability Testing</h3>
+                        <p>
+                            In bad practice of UX principles, I was the user, and I found it 
+                            kinda difficult since there aren’t labels.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Additional Issues To Address</h3>
+                        <p>
+                            I address the issues in the original medium article where I wrote 
+                            this case study!
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
