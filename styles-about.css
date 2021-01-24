@@ -7,7 +7,9 @@ body {
 * {
     margin: 0px;
 }
-
+#desktop {
+    display: none;
+}
 /* ---nav bar--- */
 nav {
     display: flex;
@@ -142,16 +144,16 @@ nav a {
 .hero {
     position: relative;
     width: 100vw;
-    height: 50vh;
+    height: 62vh;
     background: rgb(0, 0, 0);
     
 }
 .hero h1 {
     position: absolute;
-    color:white;
+    color: #E3DBD5;
     font-size: 7vh;
     bottom: 20%;
-    left: 5%;
+    left: 13%;
     font-weight: normal;
 }
 
@@ -221,9 +223,10 @@ span {
     background: rgba(136, 141, 44, 0.78);
     height: 20vh;
     text-align: center;
-    color: white;
+    color: #E3DBD5;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .brand h2 {
     height: 100%;
@@ -258,7 +261,7 @@ span {
 }
 .img-break img {
     width: 97%;
-    height: 97%;
+    height: 95%;
 }
 
 /* ---press quotes--- */
@@ -281,7 +284,8 @@ span {
     font-size: 14px;
 }
 .plogo {
-    width: 27vw;
+    width: 40vw;
+
 }
 .bullet-points div {
     display: flex;
@@ -296,12 +300,16 @@ span {
     align-items: center;  
 }
 .press > div {
-    margin-top: 2vh;
+    margin-top: 1vh;
     margin-bottom: 2vh;
 }
+.press h3 {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
 .slider {
-    width: 60vw;
-    height: 20vh;
+    width: 80vw;
+    height: 25vh;
     display: flex;
     overflow-x: auto;
     border: 2px solid #E3DBD5;
@@ -317,21 +325,25 @@ span {
     background: white;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     scroll-snap-align: start;
     -webkit-overflow-scrolling: touch
 }
-.slide-wrap > a {
+.dots {
+    text-align: center;
+}
+.dots > a {
     display: inline-flex;
-    width: 1.5rem;
-    height: 1.5rem;
-    background: white;
+    width: 1rem;
+    height: 1rem;
+    background:rgba(136, 141, 44, 0.78);
     text-decoration: none;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    margin: 0 0 0.5rem 0;
+    margin-bottom: 5px;
     position: relative;
   }
   .slide-wrap > a.page{
@@ -358,7 +370,15 @@ span {
     width: 50%;
     height: 2px;
 }
-
+#check-out-work {
+    background:rgba(136, 141, 44, 0.78);
+    color: #E3DBD5;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 27px;
+}
 /* ---bottom pics--- */
 .bottom-pics {
     height: 40vh;
@@ -409,30 +429,48 @@ span {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 5vh;
     }
     .about-me-main div {
-        width: 60vw;
+        width: 80vw;
     }
     .hello-text {
         display: flex;
         flex-direction: row;
     }
+    .hello-text p {
+        letter-spacing: 1px;
+        line-height: 1.5;
+    }
     .hello-text h1 {
         font-size: 14vh;
+        line-height: 1.5;
+        font-weight: normal;
         width: 30%;
+        height: 100%;
     }
     .hello-text div {
         padding: 5vh;
     }
     .bottom-pics {
-        height: 50vh;
+        height: 60vh;
     }
     .hero h1 {
-        font-size: 12vh;
-        left: 22%;
-        width: 20%;
-        bottom: 20%;
+        font-size: 11vh;
+        left: 5%;
+        bottom: 35%;
     }
+    .img-break {
+        height: 55vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .img-break img {
+        object-fit: cover;
+        object-position: bottom;
+    }
+    
     #desktop {
         display: block;
     }
@@ -489,5 +527,38 @@ span {
     span {
         font-size: 12px;
     }
-    
+    #one, #two, #three {
+        align-items: flex-end;
+    }
+    #one img{
+        width: 100%;
+        height: 90%;
+    }
+    #two img{
+        width: 60%;
+        height: 90%;
+    }
+    #three img{
+        width: 45%;
+        height: 85%;
+        margin-right: 15vw;
+    }
+    .slider {
+        height: inherit;
+        width: 40vw;
+        height: 35vh;
+    }
+    .dots {
+        margin-bottom: 2vh;
+    }
+    #check-out-work {
+        font-size: 40px;
+        letter-spacing: 5px;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+    .slide-panel {
+        display: flex;
+        
+    }
 }

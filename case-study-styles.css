@@ -245,13 +245,13 @@ span {
     background:rgb(211, 208, 208)
 }
 .oatmeal {
-    background: #E3DBD5; 
+    background: #E3DBD5;
 }
 .pad {
     padding: 8vw;
 }
 h3 {
-    margin-bottom: 2vh;
+    margin-bottom: 3vh;
 }
 /* ---wire-framing depop--- */
 .lead-text h1 {
@@ -282,26 +282,24 @@ h3 {
     width: 50%;
 }
 .concept-pic img {
-    width: 80%;
+    width: 100%;
+    height: 100%;
 }
 .concept-pic h3 {
     width: 110%;
 }
 .concept-pic p {
-    width: 80%;
-
+    width: 70%;
 }
 
 /* ---mid-fi wireframes--- */
-#mid-fi-text {
-    height: 10vh;
-}
-.mid-fi img {
+
+.even-split img {
     width: 100%;
-    height: 100%;
+    height: 100%
 }
-.mid-fi div {
-    height: 15vh;
+#use {
+    margin-bottom: 5vh;
 }
 
 /* ---hi-fi wireframes--- */
@@ -313,26 +311,28 @@ h3 {
 }
 .hi-fi div {
     width: 45%;
+    height: 100%;
+}
+.hi-fi p {
+    width: 75%;
 }
 #hand {
     margin-left: 5vw;
 }
 #hand img {
     width: 100%;
+    height: 100%;
 }
 
 /* ---screenshots--- */
-.screens {
-    padding: 2vh;
-}
-.screens h3 {
+.screens-d h3 {
     width: 100%;
 }
 .screens-d div {
     height: 22vh;
     margin-bottom: 3vh;
 }
-.screens img {
+.screens-d img {
     width: 100%;
     height: 100%;
 }
@@ -359,9 +359,8 @@ h3 {
 .work h2 {
     margin-bottom: 4vh;
     text-align: center;
-    font-weight: bold;
-    font-size: 25px;
-    letter-spacing: 3px;
+    font-size: 22px;
+    color:rgba(136, 141, 44, 0.78)
 }
 #black-border {
     border: 1px solid black;
@@ -388,6 +387,12 @@ h3 {
     }
     #boxes {
         display: flex;
+        width: 100%;
+    }
+    #use {
+        margin-bottom: 0;
+        margin-right: 15vw;
+        width: 50%
     }
     #boxes div {
         width: 40%;
@@ -396,13 +401,48 @@ h3 {
         width: 60%;
     }
     .pad {
-        padding: 5vw 10vw 5vw 10vw;
+        padding: 5vw 15vw 5vw 15vw;
+    }
+    .concept-pic img {
+        height: 100%;
+        width: 100%;
     }
     .concept-pic h3 {
         margin-bottom: 5vh;
+        width: 100%;
     }
     .concept-pic p {
-        width: 40%;
+        width: 100%;
+        height: 100%;
+    }
+    #usability-test {
+        margin-right: 10vw;
+    }
+    .even-split  {
+        justify-content: space-between;
+        display: flex;
+    }
+    .wide {
+        width: 30vw;
+    }
+    #wide {
+        width: 50vw;
+        height: 35vh;
+    }
+    .header-margin h3 {
+        margin-bottom: 5vh;
+    }
+    .lo-fi p {
+        width: 50%;
+    }
+    #bottom-pics-before {
+        height: 50vh;
+    }
+    #bottom-pics-process {
+        height: 65vh;
+    }
+    #bottom-pics-after {
+        height: 50vh;
     }
     /* ---nav bar--- */
     nav {
@@ -422,7 +462,17 @@ h3 {
     #menuToggle {
         display: none;
     }
-
+    .hero {
+        position: relative;
+    }
+    .hero h1 {
+        position: absolute;
+        bottom: 65%;
+        left: 33%;
+    }
+    h3 {
+        letter-spacing: 3px;
+    }
     main {
         display: flex;
         justify-content: center;
@@ -432,6 +482,51 @@ h3 {
     main section {
         width: 100vw;
     }
+    .lead-text p {
+        text-align: start;
+    }
+    .project-clicks {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 60vh;
+        margin-bottom: 0;
+    }
+    .project-clicks div {
+        width: 50vw;
+        height: 100%;
+    }
+    .project-clicks img {
+        width: 50%;
+        height: 80%;
+        bottom: 0px;
+        left: 25%;
+        position: absolute;
+    }
+    .work {
+        padding-top: 8vh;
+    }
+    .work h2 {
+        margin-bottom: 8vh;
+        font-size: 30px;
+        letter-spacing: 5px;
+
+    }
+    #black-border {
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        background: black;
+        position: relative;
+    }
+    #white-border {
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        background: white;
+        position: relative;
+    }
+    
     /* ---footer--- */
     footer h2 {
         letter-spacing: 4px;
@@ -464,6 +559,5 @@ h3 {
     span {
         font-size: 12px;
     }
-    
  
 }
