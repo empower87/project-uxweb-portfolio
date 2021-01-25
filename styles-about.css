@@ -261,6 +261,8 @@ span {
 .img-break img {
     width: 97%;
     height: 95%;
+    object-fit: cover;
+    object-position: bottom;
 }
 
 /* ---press quotes--- */
@@ -276,11 +278,11 @@ span {
 .quote {
     display: flex;
     flex-direction: column;
-    width: 60%;
 }
 .quote p {
     line-height: 1.4;
     font-size: 14px;
+    padding: 3px;
 }
 .plogo {
     width: 40vw;
@@ -300,7 +302,7 @@ span {
 }
 .press > div {
     margin-top: 1vh;
-    margin-bottom: 2vh;
+    margin-bottom: 4vh;
 }
 .press h3 {
     font-size: 30px;
@@ -346,19 +348,19 @@ span {
     border-radius: 50%;
     margin-bottom: 5px;
     position: relative;
-  }
+}
   .slide-wrap > a.page{
       color: #888D2C;
-  }
+}
   .slider > a:active {
     top: 1px;
-  }
+}
   .slider > a:focus {
     background: #000;
-  }
+}
   .slider > a:visited {
     color: inherit;
-  }
+}
 
 .slide img {
     width: 90%;
@@ -444,7 +446,7 @@ span {
         line-height: 1.5;
     }
     .hello-text h1 {
-        font-size: 14vh;
+        font-size: 9vh;
         line-height: 1.5;
         font-weight: normal;
         width: 30%;
@@ -458,8 +460,11 @@ span {
     }
     .hero h1 {
         font-size: 11vh;
-        left: 5%;
         bottom: 35%;
+    }
+    .hero > img {
+        object-fit: contain;
+        object-position: right;
     }
     .img-break {
         height: 55vh;
@@ -467,11 +472,10 @@ span {
         align-items: center;
         justify-content: center;
     }
-    .img-break img {
-        object-fit: cover;
-        object-position: bottom;
-    }
-    
+    .brand h2 {
+        letter-spacing: 2px;
+        font-size: 30px;
+    }  
     #desktop {
         display: block;
     }
@@ -540,9 +544,7 @@ span {
         height: 90%;
     }
     #three img{
-        width: 45%;
-        height: 85%;
-        margin-right: 15vw;
+        width: 80%;
     }
     .slider {
         height: inherit;
@@ -550,10 +552,9 @@ span {
         height: 35vh;
     }
     .slide {
-    width: 95%;
-    margin-right: 10%;
-
-}
+        width: 95%;
+        margin-right: 10%;
+    }
     .dots {
         margin-bottom: 2vh;
     }
@@ -579,9 +580,6 @@ span {
         border: unset;
         height: unset;
     }
-    .slide img {
-        width: 50%;
-    }
     .plogo {
         width: 30%;
     }
@@ -593,10 +591,10 @@ span {
     width: 5px;
     height: 5px;  
     }
-
     /* Track */
     ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+        color: #E3DBD5;
+        background: #E3DBD5;
     }
 
     /* Handle */
