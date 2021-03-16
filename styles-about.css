@@ -19,13 +19,27 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 8vh;
+    width: 100%;
+    height: 60px;
     z-index: 9999;
 }
-nav img {
-    width: 5vh;
-    margin-left: 2vh;
+.logo-container {
+    margin: 4px 0px 0px 4px;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background:  #888D2C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100% 100%;
+    overflow: hidden;
+    background-position: center;
+    border: 4px solid #E3DBD5;
+}
+.logo-img {
+    width: 120%;
+    height: 120%;
 }
 nav a {
     text-decoration: none;
@@ -41,12 +55,18 @@ nav a {
 /* ---massive code for a hamburger button--- */
 #menuToggle
 {
-  position: relative;
-  top: 0;
-  right: 6%;
-  z-index: 1;
-  -webkit-user-select: none;
-  user-select: none;
+    position: relative;
+    top: 0;
+    /* right: 6%; */
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
 #menuToggle a
 {
@@ -58,19 +78,18 @@ nav a {
 {
   color: tomato;
 }
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  cursor: pointer; 
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  -webkit-touch-callout: none;
-}
+#menuToggle input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* top: -7px;
+    left: -5px; */
+    cursor: pointer; 
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+}   
 #menuToggle span
 {
   display: block;
@@ -78,7 +97,7 @@ nav a {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #cdcdcd;
+  background: #E3DBD5;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -98,7 +117,7 @@ nav a {
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #ffffff;
+  background: #E3DBD5;
 }
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
@@ -109,13 +128,13 @@ nav a {
 {
   transform: rotate(-45deg) translate(0, -1px);
 }
-#menu
-{
+#menu {
   position: absolute;
+  top: 0;
   width: 100vw;
-  margin: 1vh 0 0 -100vw;
+  margin: 0 0 0 -100vw;
   padding: 10vh;
-  padding-top: 5vh;
+  padding-top: 7vh;
   background: #00000096;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -123,6 +142,7 @@ nav a {
   transform: translate(100%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
+
 #menu li
 {
   padding: 10px 0;
@@ -253,14 +273,14 @@ span {
 }
 .img-break {
     height: 30vh;
-    background:rgba(136, 141, 44, 0.78);
+    border: 6px solid rgba(136, 141, 44, 0.78);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .img-break img {
-    width: 97%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: bottom;
 }
@@ -479,12 +499,16 @@ span {
     #desktop {
         display: block;
     }
+    .nyt-img-desktop {
+        width: 100%; 
+        height: 100%;
+    }
     #mobile {
         display: none;
     }
     /* ---nav bar--- */
     nav {
-        height: 6vh;
+        height: 8vh;
         background: rgba(0, 0, 0, 0.692);
     }
     .desktop-links {
