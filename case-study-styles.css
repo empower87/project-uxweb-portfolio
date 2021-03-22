@@ -26,9 +26,9 @@ nav {
     z-index: 9999;
 }
 .logo-container {
-    margin: 4px 0px 0px 4px;
-    height: 50px;
-    width: 50px;
+    margin: 8px 0px 0px 8px;
+    height: 45px;
+    width: 45px;
     border-radius: 100%;
     background:  #888D2C;
     display: flex;
@@ -483,12 +483,14 @@ h3 {
 
     /* ---nav bar--- */
     nav {
-        height: 8vh;
+        height: 10vh;
         background: #ff5151af;
     }
+    .logo-container {
+        margin: 0px 0px 0px 2vw;
+    }
     .desktop-links {
-        width: 30vw;
-        margin-right: 1vw;
+        width: 15vw;
         display: flex;
         justify-content: space-evenly;
     }
